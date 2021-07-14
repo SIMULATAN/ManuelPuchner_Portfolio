@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { useState, useEffect } from "react";
 
-export default function Home({ data }) {
+function Home() {
   const [joke, setJoke] = useState({});
 
   const fetchJoke = async () => {
@@ -36,3 +36,5 @@ export default function Home({ data }) {
     </div>
   );
 }
+
+export default Home;
