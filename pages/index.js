@@ -7,7 +7,8 @@ export default function Home() {
       <Head>
         <title>Manuel Puchner</title>
       </Head>
-      <h1>Welcome to Next</h1>
+      <h1>Manuel Puchner portfolio</h1>
+      <p>please note this is currently in development</p>
     </div>
   )
 }
