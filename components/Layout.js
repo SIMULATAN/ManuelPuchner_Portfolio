@@ -1,6 +1,6 @@
 import Head from 'next/head';
 
-import Header from './Header.js'
+import Header from './header.js'
 
 function Layout({ children }) {
   return (
