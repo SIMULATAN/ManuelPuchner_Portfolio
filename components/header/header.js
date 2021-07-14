@@ -1,10 +1,15 @@
 import Link from 'next/link'
 
-function Header() {
+
+import styles from './Header.module.scss'
+
+function Header({ children }) {
   return (
     <>
       <header>
         <h1>Manuel Puchner</h1>
+        
+        {children}
       </header>
     </>
   )
