@@ -1,0 +1,19 @@
+.nav {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  .link {
+    padding: 0 0.6rem;
+    font-size: 1.3rem;
+    cursor: pointer;
+  }
+
+  .link:hover {
+    color: #35ff68;
+  }
+  .active {
+    color: #35ff68;
+  }
+}
