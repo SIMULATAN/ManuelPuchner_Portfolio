@@ -1,0 +1,41 @@
+.notification {
+  position: fixed;
+  bottom: 3rem !important;
+  right: 3rem;
+
+  background-color: #35ff68;
+  padding: 2.5rem;
+  color: #151418;
+
+  border-radius: 0.5rem;
+  // .closeButton {
+  //   position: absolute;
+  //   top: 1rem;
+  //   right: 1rem;
+  //   border: none;
+  //   background: none;
+  //   & > * {
+  //     display: block;
+  //     width: 1.5rem;
+  //     height: 1.5rem;
+  //   }
+  // }
+  h3 {
+    padding-right: 1rem;
+  }
+
+  .understandButton {
+    position: absolute;
+    top: 0.6rem;
+    right: 0.6rem;
+    border: none;
+    background: none;
+    font-weight: bold;
+    border-radius: 2rem;
+    font-size: 1rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #151418;
+    color: #fefefe;
+  }
+}
