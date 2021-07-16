@@ -11,7 +11,7 @@ function About() {
           <h2>Developer and Photographer</h2>
           <p>I&apos;m 15 years old and currently attending HTL-Leonding</p>
           <p>Currently, I&apos;m learning React and Next.js</p>
-          <p>Constantly trying ro improve my coding skills . . .</p>
+          <p>At the moment trying ro improve my coding skills . . .</p>
         </div>
         <div className={styles.pictureWrapper}>
           <Image
