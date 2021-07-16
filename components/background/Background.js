@@ -10,11 +10,17 @@ function background() {
     "rgb(21, 20, 24)",
     "rgb(245, 245, 255)",
   ];
+
+  
   return (
     <div style={{ position: "relative" }}>
       <div className={styles.bg}>
+        {/* big shapes */}
         <BackgroundShape id={shapestyles._1} />
         <BackgroundShape id={shapestyles._2} />
+        <BackgroundShape id={shapestyles._3} />
+
+        {/* smaller shapes */}
       </div>
     </div>
   );

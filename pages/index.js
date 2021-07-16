@@ -13,7 +13,7 @@ function Home() {
     <>
       <Head>
         <title>Manuel Puchner | Portfolio</title>
-        <meta name="viewport" content="initial-scale=0.9, width=device-width" />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
 
       {/* fixid position stuff */}
@@ -24,6 +24,7 @@ function Home() {
       {/* normal stuff */}
       <Layout>
         <About />
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
       </Layout>
     </>
   );
