@@ -1,0 +1,33 @@
+.socialsSidebar {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+
+  ul {
+    list-style-type: none;
+
+    .socialIcon {
+      display: block;
+      width: 2.35rem;
+      height: 2.35rem;
+      padding: 0.2rem;
+      margin: 1.8rem 0.3rem;
+      stroke-width: 2.3px;
+    }
+    a {
+      color: #777779;
+    }
+    a:hover {
+      color: #35ff68;
+    }
+  }
+}
+
+#left {
+  right: unset;
+  left: 1.5rem;
+}
+#right {
+  left: unset;
+  right: 1.5rem;
+}

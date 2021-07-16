@@ -1,7 +1,6 @@
 import { Link as ScrollLink } from "react-scroll";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import the FontAwesomeIcon component
-import { faCog } from "@fortawesome/free-solid-svg-icons"; // import the icons you need
+import { AiFillSetting } from "react-icons/ai";
 
 import styles from "./Header.module.scss";
 
@@ -24,7 +23,7 @@ function Header({ children }) {
           {children}
 
           <a className={styles.settingsButton}>
-            <FontAwesomeIcon className={styles.settingsIcon} icon={faCog} />
+            <AiFillSetting className={styles.settingsIcon} />
           </a>
         </header>
       </div>

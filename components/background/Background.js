@@ -11,7 +11,7 @@ function background() {
     "rgb(245, 245, 255)",
   ];
   return (
-    <div style={{position: "relative"}}>
+    <div style={{ position: "relative" }}>
       <div className={styles.bg}>
         <BackgroundShape id={shapestyles._1} />
         <BackgroundShape id={shapestyles._2} />
