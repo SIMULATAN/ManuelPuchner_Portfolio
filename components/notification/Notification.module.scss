@@ -2,8 +2,9 @@
   position: fixed;
   bottom: 3rem !important;
   right: 3rem;
+  z-index: 9999;
 
-  background-color: #35ff68;
+  background-color: var(--theme-color);
   padding: 2.5rem;
   color: #151418;
 

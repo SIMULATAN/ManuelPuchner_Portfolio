@@ -13,7 +13,7 @@ function background() {
 
   
   return (
-    <div style={{ position: "relative" }}>
+    <div className={styles.bgWrapper}>
       <div className={styles.bg}>
         {/* big shapes */}
         <BackgroundShape id={shapestyles._1} />
@@ -21,6 +21,12 @@ function background() {
         <BackgroundShape id={shapestyles._3} />
 
         {/* smaller shapes */}
+        <BackgroundShape id={shapestyles._4} />
+        <BackgroundShape id={shapestyles._5} />
+        <BackgroundShape id={shapestyles._6} />
+        <BackgroundShape id={shapestyles._7} />
+        <BackgroundShape id={shapestyles._8} />
+        <BackgroundShape id={shapestyles._9} />
       </div>
     </div>
   );

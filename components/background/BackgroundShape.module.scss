@@ -1,28 +1,80 @@
 .shape {
   position: absolute;
   transform: rotate(45deg);
+  border-radius: 23%;
 }
 
 #_1 {
-  width: 50rem;
-  height: 50rem;
-  top: -5rem;
-  left: -12rem;
+  width: 40rem;
+  height: 40rem;
+  top: 0rem;
+  left: -62rem;
 
-  border-radius: 23%;
   background-color: rgb(36, 35, 41);
 }
 
 #_2 {
-  width: 4000px;
-  height: 4000px;
-  top:  1050px;
-  left: -600px;
+  width: 250rem;
+  height: 250rem;
+  top: 66rem;
+  left: -95rem;
 
-  border-radius: 23%;
   background-color: rgb(251, 251, 255);
 }
 
 #_3 {
-  
+}
+#_4 {
+  width: 2rem;
+  height: 2rem;
+  top: 9rem;
+  left: -14rem;
+
+  background-color: rgb(70, 69, 74);
+}
+
+#_5 {
+  width: 5rem;
+  height: 5rem;
+  top: 3rem;
+  left: 10rem;
+
+  background-color: rgb(36, 35, 41);
+}
+
+#_6 {
+  width: 3rem;
+  height: 3rem;
+  top: 12rem;
+  left: 30rem;
+
+  background-color: rgb(70, 69, 74);
+}
+
+#_7 {
+  width: 8rem;
+  height: 8rem;
+  top: 23rem;
+  left: 33rem;
+
+  background-color: rgb(36, 35, 41);
+}
+
+#_8 {
+  width: 3rem;
+  height: 3rem;
+  top: 35rem;
+  left: -10rem;
+
+  background-color: rgb(70, 69, 74);
+}
+
+
+#_9 {
+  width: 1.5rem;
+  height: 1.5rem;
+  top: 50rem;
+  left: -40rem;
+
+  background-color: rgb(70, 69, 74);
 }

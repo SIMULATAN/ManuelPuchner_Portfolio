@@ -1,9 +1,12 @@
 .headerWrapper {
+  z-index: 11;
   height: 110px;
   width: 100%;
   position: fixed;
   top: 0;
   user-select: none;
+
+  transition: background-color 250ms;
   .header {
     width: 1000px;
     margin: 0 auto;
@@ -15,7 +18,7 @@
 
     .settingsButton {
       padding: 0.5rem;
-      background-color: #35ff68;
+      background-color: var(--theme-color);
       border: none;
       border-radius: 0.4rem;
 

@@ -1,11 +1,18 @@
 .bg {
   z-index: -10;
   position: absolute;
-  width: 100vw;
-  max-width: 100vw;
-  min-height: 100vh;
-  overflow: hidden;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+}
 
+.bgWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
 
   height: 2400px;
 }
