@@ -11,7 +11,7 @@ function Header({ children }) {
   };
 
   // #151418
-  const [headerbg, setHeaderbg] = useState("#00000000");
+  const [headerbg, setHeaderbg] = useState("rgba(0,0,0,0)");
   useEffect(() => {
     window.addEventListener("scroll", checkPos);
 
@@ -30,10 +30,10 @@ function Header({ children }) {
     // const scrolled = winScroll / height;
     //console.log(scrolled)
 
-    if ((document.body.scrollTop || document.documentElement.scrollTop) > 340) {
-      setHeaderbg("#151418");
+    if ((document.body.scrollTop || document.documentElement.scrollTop) > 325) {
+      setHeaderbg("rgb(21, 20, 24)");
     } else {
-      setHeaderbg("#00000000")
+      setHeaderbg("rgba(0,0,0,0)");
     }
   };
   
