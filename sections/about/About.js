@@ -1,10 +1,30 @@
+import { useState, useEffect } from "react";
+
 import Image from "next/image";
 
 import styles from "./About.module.scss";
 
 function About() {
+
+  const [opacity, setOpacity] = useState(1);
+  useEffect(() => {
+    // changing the opacity based on the scrollposition
+    const aboutSection = document.getElementById("about");
+    window.addEventListener("scroll", () => {
+      let scrollPos = document.body.scrollTop || document.documentElement.scrollTop;
+      if (scrollPos < 550) {
+        setOpacity(1 - scrollPos / aboutSection.offsetHeight);
+      }
+    });
+
+    // on unmount
+    return () => {
+      window.removeEventListener("scroll", () => {});
+    };
+  }, []);
+
   return (
-    <div id="about">
+    <div id="about" style={{opacity: opacity}}>
       <div className={styles.about}>
         <div className={styles.textWrapper}>
           <h1>Hi, I&apos;m Manuel</h1>
