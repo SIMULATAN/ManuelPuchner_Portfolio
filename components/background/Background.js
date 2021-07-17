@@ -4,6 +4,7 @@ import styles from "./Background.module.scss";
 import shapestyles from "./BackgroundShape.module.scss";
 import BackgroundShape from "./BackgroundShape";
 
+import Parallax from "../parallax/Parallax";
 function Background() {
   const shapecolors = [
     "rgb(36, 35, 41)",
@@ -36,11 +37,14 @@ function Background() {
         <BackgroundShape id={shapestyles._3} />
 
         {/* smaller shapes */}
-        <BackgroundShape id={shapestyles._4} />
-        <BackgroundShape id={shapestyles._5} />
-        <BackgroundShape id={shapestyles._6} />
-        <BackgroundShape id={shapestyles._7} />
-        <BackgroundShape id={shapestyles._8} />
+        <Parallax>
+          <BackgroundShape id={shapestyles._4} />
+          <BackgroundShape id={shapestyles._5} />
+          <BackgroundShape id={shapestyles._6} />
+          <BackgroundShape id={shapestyles._7} />
+          <BackgroundShape id={shapestyles._8} />
+        </Parallax>
+
         <BackgroundShape id={shapestyles._9} />
       </div>
     </div>
