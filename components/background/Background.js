@@ -14,13 +14,18 @@ function Background() {
   ];
 
   const [height, setHeight] = useState(0);
+  var counter = 0;
   useEffect(() => {
-    setHeight(document.documentElement.clientHeight);
-    const resizeObserver = new ResizeObserver((entries) =>
-      setHeight(document.documentElement.clientHeight)
-    );
+    setHeight(document.getElementById("__next").offsetHeight);
+    const resizeObserver = new ResizeObserver((entries) => {
+      if(counter % 5 === 0) {
+        setHeight(document.getElementById("__next").offsetHeight);
+        console.log(-1);
+      }
+      counter++;
+    });
     resizeObserver.observe(document.body);
-  }, []);
+  }, [counter]);
 
   return (
     <div className={styles.bgWrapper} style={{ height: height }}>
