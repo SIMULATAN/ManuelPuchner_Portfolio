@@ -21,7 +21,6 @@ function Background() {
     const resizeObserver = new ResizeObserver((entries) => {
       if(counter % 5 === 0) {
         setHeight(document.getElementById("__next").offsetHeight);
-        console.log(-1);
       }
       counter++;
     });

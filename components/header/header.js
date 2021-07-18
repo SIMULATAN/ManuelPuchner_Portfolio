@@ -14,11 +14,11 @@ function Header({ children }) {
   const [headerbg, setHeaderbg] = useState("rgba(0,0,0,0)");
   useEffect(() => {
     const checkPos = () => {
-      if (
-        (document.body.scrollTop || document.documentElement.scrollTop) > 325
-      ) {
+      let scrollPos =
+        document.body.scrollTop || document.documentElement.scrollTop;
+      if (scrollPos > 325 && scrollPos < 500) {
         setHeaderbg("rgb(21, 20, 24)");
-      } else {
+      } else if (scrollPos < 325 && scrollPos > 100) {
         setHeaderbg("rgba(0,0,0,0)");
       }
     };

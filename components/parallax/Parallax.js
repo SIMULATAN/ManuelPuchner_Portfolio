@@ -3,13 +3,13 @@ import { useState, useEffect } from "react";
 function Parallax({ children }) {
   const [offsetY, setOffsetY] = useState(0);
 
-  
   useEffect(() => {
     const handleScroll = () => {
       var scrollPos =
         document.body.scrollTop || document.documentElement.scrollTop;
-
-      setOffsetY(-scrollPos);
+      if (scrollPos < 500) {
+        setOffsetY(-scrollPos);
+      }
     };
     window.addEventListener("scroll", handleScroll);
 
