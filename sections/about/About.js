@@ -13,7 +13,13 @@ function About() {
       let scrollPos =
         document.body.scrollTop || document.documentElement.scrollTop;
       if (scrollPos < 550) {
-        setOpacity(1 - scrollPos / aboutSection.offsetHeight);
+        let opacityOffset = 0;
+        if(window.innerHeight < 700) {
+          opacityOffset = 0.6;
+        } else {
+          opacityOffset = 0;
+        }
+        setOpacity(1 - scrollPos / aboutSection.offsetHeight + opacityOffset);
       }
     };
     window.addEventListener("scroll", handleScroll);

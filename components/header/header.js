@@ -7,7 +7,11 @@ import styles from "./Header.module.scss";
 
 function Header({ children }) {
   const test = () => {
-    document.body.style.setProperty("--theme-color", "#ff0000");
+    if(document.body.style.getPropertyValue("--theme-color") == "#ff0000") {
+      document.body.style.setProperty("--theme-color", "#35ff68");
+    } else {
+      document.body.style.setProperty("--theme-color", "#ff0000");
+    }
   };
 
   // #151418
