@@ -36,7 +36,7 @@ function Header({ children }) {
       setHeaderbg("rgba(0,0,0,0)");
     }
   };
-  
+
   return (
     <>
       <div
