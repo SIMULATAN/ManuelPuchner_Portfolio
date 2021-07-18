@@ -22,18 +22,7 @@ function Parallax({ children }) {
         transform: "translateY(calc(var(--parallax-offsetY) * 0.25px))",
       }}
     >
-      {children.map((child, index) => {
-        return (
-          <div
-            key={index}
-            style={{
-              transform: "scale(calc(var(--parallax-offsetY) / 4000 + 1))",
-            }}
-          >
-            {child}
-          </div>
-        );
-      })}
+      {children}
     </div>
   );
 }

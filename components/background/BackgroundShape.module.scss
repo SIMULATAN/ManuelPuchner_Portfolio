@@ -4,6 +4,10 @@
   border-radius: 23%;
 }
 
+.parallaxScale {
+  transform: rotate(45deg) scale(calc(var(--parallax-offsetY) / 1000 + 1));
+}
+
 #_1 {
   width: 40rem;
   height: 40rem;

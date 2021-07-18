@@ -18,7 +18,7 @@ function Background() {
   useEffect(() => {
     setHeight(document.getElementById("__next").offsetHeight);
     const resizeObserver = new ResizeObserver((entries) => {
-      if(counter % 5 === 0) {
+      if (counter % 5 === 0) {
         setHeight(document.getElementById("__next").offsetHeight);
       }
       counter++;
@@ -36,11 +36,11 @@ function Background() {
 
         {/* smaller shapes */}
         <Parallax>
-          <BackgroundShape id={shapestyles._4} />
-          <BackgroundShape id={shapestyles._5} />
-          <BackgroundShape id={shapestyles._6} />
-          <BackgroundShape id={shapestyles._7} />
-          <BackgroundShape id={shapestyles._8} />
+          <BackgroundShape id={shapestyles._4} parallaxScale />
+          <BackgroundShape id={shapestyles._5} parallaxScale />
+          <BackgroundShape id={shapestyles._6} parallaxScale />
+          <BackgroundShape id={shapestyles._7} parallaxScale />
+          <BackgroundShape id={shapestyles._8} parallaxScale />
         </Parallax>
 
         <BackgroundShape id={shapestyles._9} />
@@ -48,7 +48,14 @@ function Background() {
     </div>
   );
 }
-function BackgroundShape({ id }) {
-  return <div className={shapestyles.shape} id={id}></div>;
+function BackgroundShape({ id, parallaxScale }) {
+  return (
+    <div
+      className={`${shapestyles.shape} ${
+        parallaxScale && shapestyles.parallaxScale
+      }`}
+      id={id}
+    ></div>
+  );
 }
 export default Background;
