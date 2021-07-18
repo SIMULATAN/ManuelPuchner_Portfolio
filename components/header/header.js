@@ -1,7 +1,7 @@
 import { Link as ScrollLink } from "react-scroll";
 import { useEffect, useState } from "react";
 
-import { AiFillSetting } from "react-icons/ai";
+import { AiFillSetting, AiOutlineSetting } from "react-icons/ai";
 
 import styles from "./Header.module.scss";
 
@@ -44,14 +44,20 @@ function Header({ children }) {
               spy={true}
               smooth={true}
             >
-              ManuelP
+              <span className={styles.desktopLogo}>ManuelP</span>
+              <span className={styles.mobileLogo}>MP</span>
             </ScrollLink>
           </h1>
 
           {children}
 
           <a className={styles.settingsButton} onClick={test}>
-            <AiFillSetting className={styles.settingsIcon} />
+            <AiFillSetting
+              className={`${styles.settingsIcon} ${styles.desktopIcon}`}
+            />
+            <AiOutlineSetting
+              className={`${styles.settingsIcon} ${styles.mobileIcon}`}
+            />
           </a>
         </header>
       </div>

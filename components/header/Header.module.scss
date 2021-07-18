@@ -15,29 +15,67 @@
     justify-content: space-between;
     position: relative;
 
+    h1 .mobileLogo {
+      display: none;
+    }
+
+    h1 .desktopLogo {
+    }
+
     .settingsButton {
       padding: 0.5rem;
       background-color: var(--theme-color);
       border: none;
       border-radius: 0.4rem;
 
-      $iconSize: 2rem;
+      --icon-size: 2rem;
       .settingsIcon {
-        width: $iconSize !important;
-        height: $iconSize !important;
+        width: var(--icon-size) !important;
+        height: var(--icon-size) !important;
         display: block;
         color: #282b2e;
+
+        &.mobileIcon {
+          display: none;
+        }
       }
     }
   }
 }
 
-@media screen and (max-width: 1032px) {
+@media screen and (max-width: 1168px) {
   .headerWrapper {
     .header {
       width: 100%;
       box-sizing: border-box;
-      padding: 1.5rem 2.5rem;
+      padding: 1.3rem 1.6rem;
+
+      h1 {
+        font-size: 1.6rem;
+        display: flex;
+        align-items: center;
+        .mobileLogo {
+          display: block;
+        }
+        .desktopLogo {
+          display: none;
+        }
+      }
+
+      .settingsButton {
+        padding: 0.35rem;
+        padding-right: 0;
+        background-color: rgb(0, 0, 0, 0);
+        .settingsIcon {
+          color: var(--theme-color);
+          &.desktopIcon {
+            display: none;
+          }
+          &.mobileIcon {
+            display: block;
+          }
+        }
+      }
     }
   }
 }

@@ -1,6 +1,6 @@
 .notification {
   position: fixed;
-  bottom: 3rem !important;
+  margin-bottom: 3rem;
   right: 3rem;
   z-index: 9999;
 
@@ -9,18 +9,6 @@
   color: #151418;
 
   border-radius: 0.5rem;
-  // .closeButton {
-  //   position: absolute;
-  //   top: 1rem;
-  //   right: 1rem;
-  //   border: none;
-  //   background: none;
-  //   & > * {
-  //     display: block;
-  //     width: 1.5rem;
-  //     height: 1.5rem;
-  //   }
-  // }
   h3 {
     padding-right: 1rem;
   }
@@ -38,5 +26,27 @@
     height: 2.5rem;
     background-color: #151418;
     color: #fefefe;
+  }
+}
+
+@media screen and (max-width: 1168px) {
+  .notification {
+    box-sizing: border-box;
+    margin-bottom: 0;
+    width: 100%;
+    right: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+
+    padding: 1rem;
+    padding-right: 3.6rem;
+
+    h3 {
+      padding-right: 0;
+    }
+    .understandButton {
+      top: 50%;
+      transform: translateY(-50%);
+    }
   }
 }

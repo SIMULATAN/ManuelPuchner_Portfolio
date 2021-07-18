@@ -13,6 +13,11 @@
       color: #777779;
       margin-bottom: 1.5rem;
     }
+
+    .mobileDescription {
+      display: none;
+      margin-bottom: 3rem;
+    }
   }
   .pictureWrapper {
     position: relative;
@@ -30,6 +35,29 @@
       width: 100% !important;
       position: relative !important;
       height: unset !important;
+    }
+  }
+}
+
+
+@media screen and (max-width: 1168px){
+  .about {
+    padding-top: 8rem;
+    flex-direction: column;
+    text-align: center;
+    .textWrapper {
+      .desktopDescription {
+        display: none;
+      }
+      .mobileDescription {
+        display: block;
+      }
+    }
+
+    .pictureWrapper {
+      > div {
+        transform: translateX(0);
+      }
     }
   }
 }

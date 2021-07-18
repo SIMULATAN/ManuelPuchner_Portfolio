@@ -17,3 +17,12 @@
     color: var(--theme-color);
   }
 }
+
+
+@media screen and (max-width: 1168px) {
+  .nav {
+    .link {
+      font-size: 0.875rem;
+    }
+  }
+}

@@ -2,9 +2,6 @@ import CookieConsent from "react-cookie-consent";
 
 import styles from "./Notification.module.scss";
 
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faTimes } from "@fortawesome/free-solid-svg-icons";
-
 function Notification() {
   return (
     <CookieConsent

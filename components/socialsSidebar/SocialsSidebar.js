@@ -45,7 +45,6 @@ function SocialsSidebar() {
     };
   }, []);
 
-  
   return (
     <aside className={styles.socialsSidebar} style={style}>
       <ul>
