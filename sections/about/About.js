@@ -9,18 +9,20 @@ function About() {
   useEffect(() => {
     // changing the opacity based on the scrollposition
     const aboutSection = document.getElementById("about");
-    window.addEventListener("scroll", () => {
+    const handleScroll = () => {
       let scrollPos =
         document.body.scrollTop || document.documentElement.scrollTop;
       if (scrollPos < 550) {
         setOpacity(1 - scrollPos / aboutSection.offsetHeight);
       }
-    });
+    };
+    window.addEventListener("scroll", handleScroll);
 
     // on unmount
     return () => {
-      window.removeEventListener("scroll", () => {});
+      window.removeEventListener("scroll", handleScroll);
     };
+    
   }, []);
 
   return (

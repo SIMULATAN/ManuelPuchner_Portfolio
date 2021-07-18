@@ -13,29 +13,22 @@ function Header({ children }) {
   // #151418
   const [headerbg, setHeaderbg] = useState("rgba(0,0,0,0)");
   useEffect(() => {
+    const checkPos = () => {
+      if (
+        (document.body.scrollTop || document.documentElement.scrollTop) > 325
+      ) {
+        setHeaderbg("rgb(21, 20, 24)");
+      } else {
+        setHeaderbg("rgba(0,0,0,0)");
+      }
+    };
+
     window.addEventListener("scroll", checkPos);
 
     return () => {
-      window.removeEventListener("scroll", () => {});
+      window.removeEventListener("scroll", checkPos);
     };
   }, []);
-
-  const checkPos = () => {
-    //                    for percent scrolled
-    // const winScroll =
-    //   document.body.scrollTop || document.documentElement.scrollTop;
-    // const height =
-    //   document.documentElement.scrollHeight -
-    //   document.documentElement.clientHeight;
-    // const scrolled = winScroll / height;
-    //console.log(scrolled)
-
-    if ((document.body.scrollTop || document.documentElement.scrollTop) > 325) {
-      setHeaderbg("rgb(21, 20, 24)");
-    } else {
-      setHeaderbg("rgba(0,0,0,0)");
-    }
-  };
 
   return (
     <>
