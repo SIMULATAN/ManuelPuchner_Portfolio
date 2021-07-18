@@ -1,14 +1,12 @@
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 
 function Parallax({ children }) {
-  const [offsetY, setOffsetY] = useState(0);
-
   useEffect(() => {
     const handleScroll = () => {
       var scrollPos =
         document.body.scrollTop || document.documentElement.scrollTop;
       if (scrollPos < 500) {
-        setOffsetY(-scrollPos);
+        document.body.style.setProperty("--parallax-offsetY", -scrollPos);
       }
     };
     window.addEventListener("scroll", handleScroll);
@@ -21,14 +19,16 @@ function Parallax({ children }) {
   return (
     <div
       style={{
-        transform: `translateY(${offsetY * 0.25}px)`,
+        transform: "translateY(calc(var(--parallax-offsetY) * 0.25px))",
       }}
     >
       {children.map((child, index) => {
         return (
           <div
             key={index}
-            style={{ transform: `scale(${offsetY / 4000 + 1})` }}
+            style={{
+              transform: "scale(calc(var(--parallax-offsetY) / 4000 + 1))",
+            }}
           >
             {child}
           </div>
