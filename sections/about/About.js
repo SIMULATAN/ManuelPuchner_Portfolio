@@ -22,7 +22,6 @@ function About() {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-    
   }, []);
 
   return (
@@ -47,8 +46,8 @@ function About() {
           <div className={styles.mobileDescription}>
             <p>
               I&apos;m 15 years old and currently attending HTL-Leonding.
-              Currently, I&apos;m learning React and Next.js.
-              At the moment I&apos;m trying to improve my coding skills . . .
+              Currently, I&apos;m learning React and Next.js. At the moment
+              I&apos;m trying to improve my coding skills . . .
             </p>
           </div>
         </div>

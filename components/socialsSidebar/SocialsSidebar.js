@@ -12,7 +12,6 @@ function SocialsSidebar() {
   });
 
   useEffect(() => {
-
     const checkPos = () => {
       var scrollPos =
         document.body.scrollTop || document.documentElement.scrollTop;
