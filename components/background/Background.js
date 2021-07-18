@@ -49,6 +49,6 @@ function Background() {
   );
 }
 function BackgroundShape({ id }) {
-  return <div className={styles.shape} id={id}></div>;
+  return <div className={shapestyles.shape} id={id}></div>;
 }
 export default Background;
