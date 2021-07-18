@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 
 import styles from "./Background.module.scss";
 import shapestyles from "./BackgroundShape.module.scss";
-import BackgroundShape from "./BackgroundShape";
 
 import Parallax from "../parallax/Parallax";
 function Background() {
@@ -49,5 +48,7 @@ function Background() {
     </div>
   );
 }
-
+function BackgroundShape({ id }) {
+  return <div className={styles.shape} id={id}></div>;
+}
 export default Background;
