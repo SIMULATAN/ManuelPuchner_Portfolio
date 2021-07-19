@@ -14,12 +14,12 @@ function About() {
         document.body.scrollTop || document.documentElement.scrollTop;
       if (scrollPos < 550) {
         let opacityOffset = 0;
-        if(window.innerHeight < 700) {
-          opacityOffset = 0.6;
+        if(window.innerWidth < 450) {
+          opacityOffset = 0.58;
         } else {
           opacityOffset = 0;
         }
-        setOpacity(1 - scrollPos / aboutSection.offsetHeight + opacityOffset);
+        setOpacity(1 - scrollPos / aboutSection.offsetHeight * 1.1 + opacityOffset);
       }
     };
     window.addEventListener("scroll", handleScroll);

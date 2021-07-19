@@ -90,6 +90,16 @@
     left: 20rem;
   }
   #_7 {
-    left: 10rem;
+    left: 23rem;
+  }
+}
+
+
+@media screen and (max-width: 576px) {
+  #_6 {
+    left: 6rem;
+  }
+  #_7 {
+    left: 2.5rem;
   }
 }
