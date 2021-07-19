@@ -17,11 +17,15 @@ function Background() {
   var counter = 0;
   useEffect(() => {
     setHeight(document.getElementById("__next").offsetHeight);
-    const resizeObserver = new ResizeObserver((entries) => {
+    const handleResize = () => {
       if (counter % 5 === 0) {
         setHeight(document.getElementById("__next").offsetHeight);
       }
       counter++;
+    }
+    handleResize()
+    const resizeObserver = new ResizeObserver((entries) => {
+      handleResize()
     });
     resizeObserver.observe(document.body);
   }, [counter]);
