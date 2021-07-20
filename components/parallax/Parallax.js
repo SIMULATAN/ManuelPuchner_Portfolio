@@ -19,7 +19,7 @@ function Parallax({ children }) {
   return (
     <div
       style={{
-        transform: "translateY(calc(var(--parallax-offsetY) * 0.25px))",
+        transform: "translateY(calc(var(--parallax-offsetY) * 0.35px))",
       }}
     >
       {children}
