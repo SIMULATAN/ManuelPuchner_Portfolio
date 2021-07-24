@@ -1,9 +1,9 @@
-#This is the personal portfolio / website of me (Manuel Puchner)
+# This is the personal portfolio / website of me (Manuel Puchner)
 
 
 
 
-*default readme*
+### *default readme:*  
 Run the development server:
 
 ```bash
