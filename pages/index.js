@@ -6,6 +6,7 @@ import Background from "../components/background/Background.js";
 import SocialsSidebar from "../components/socialsSidebar/SocialsSidebar.js";
 
 import About from "../sections/about/About.js";
+import Work from "../sections/work/Work.js";
 import Notification from "../components/notification/Notification.js";
 
 function Home() {
@@ -24,6 +25,7 @@ function Home() {
       {/* normal stuff */}
       <Layout>
         <About />
+        <Work />
         <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
       </Layout>
     </>
