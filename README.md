@@ -1,8 +1,10 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# This is the personal portfolio / website of me (Manuel Puchner)
+## Visit [https://manuel-puchner.vercel.app](https://manuel-puchner.vercel.app)
 
-## Getting Started
 
-First, run the development server:
+
+### *default readme:*  
+Run the development server:
 
 ```bash
 npm run dev
