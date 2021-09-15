@@ -1,5 +1,5 @@
 # This is the personal portfolio / website of me (Manuel Puchner)
-## Visit [https://manuelpuchner.ddns.net](https://manuelpuchner.ddns.net)
+## Visit [http://manuelpuchner.ddns.net](http://manuelpuchner.ddns.net)
 
 
 
