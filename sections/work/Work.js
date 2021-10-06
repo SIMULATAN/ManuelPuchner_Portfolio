@@ -5,7 +5,11 @@ import styles from "./Work.module.scss";
 function Work() {
   const images = [
     {
-      src: "/me.png",
+      src: "https://picsum.photos/1920/1080",
+      alt: "me",
+    },
+    {
+      src: "https://picsum.photos/1921/1081",
       alt: "me",
     },
   ];

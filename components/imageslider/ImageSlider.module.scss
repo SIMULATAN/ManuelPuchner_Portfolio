@@ -1,18 +1,76 @@
+.ImageSlider {
+  display: inline-flex;
+  width: 33.3333vw;
+  max-width: 450px;
+  overflow: hidden;
+}
+
 .pictureWrapper {
-  position: relative;
-  height: 100%;
-  margin: 0 auto;
-  width: 14rem;
+  width: 100vw;
+  height: fit-content !important;
+
   > div {
-    height: 100%;
-    width: 100%;
+    width: 33.3333vw;
+    max-width: 450px;
     position: unset !important;
-    transform: translateX(2rem);
   }
-  .img {
+
+  .image {
     object-fit: contain;
     width: 100% !important;
     position: relative !important;
     height: unset !important;
+  }
+}
+
+.controls {
+  user-select: none;
+  display: flex;
+  padding: 0.3rem 0 0 0.5rem;
+  & > * {
+    box-sizing: border-box;
+  }
+  div {
+    width: fit-content;
+    display: block;
+    font-size: 0.8rem;
+    margin: 0.2rem;
+
+    label {
+      display: block;
+      position: relative;
+      border: 0.15em solid rgb(136, 136, 136);
+      border-radius: 1rem;
+      height: 1em;
+      width: 1em;
+    }
+
+    label::before {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-53%, -50%);
+      content: "";
+      width: 0em;
+      height: 0em;
+      background-color: var(--theme-color);
+      border-radius: 50%;
+      transition: 80ms ease-out;
+    }
+
+    input:checked ~ label::before {
+      width: 0.6em;
+      height: 0.6em;
+    }
+    input:checked ~ label {
+      border: 0.15em solid var(--theme-color);
+    }
+    input {
+      transition: 15ms ease-out;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+    }
   }
 }
