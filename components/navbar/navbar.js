@@ -16,7 +16,7 @@ function navbar() {
       </ScrollLink>
       <ScrollLink
         activeClass={styles.active}
-        to="Projects"
+        to="work"
         spy={true}
         smooth={true}
         className={styles.link}

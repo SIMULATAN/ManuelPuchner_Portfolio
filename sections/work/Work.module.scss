@@ -1,7 +1,13 @@
 .work {
   z-index: 1000;
-  padding-top: 5rem;
+  padding-top: 10rem;
   .workHeader {
     font-size: 1.75rem;
+  }
+}
+
+@media screen and (max-width: 55rem){
+  .work {
+    color: #000;
   }
 }

@@ -3,23 +3,33 @@
   width: 33.3333vw;
   max-width: 450px;
   overflow: hidden;
+  position: relative;
+  border-radius: 1rem;
 }
 
 .pictureWrapper {
   width: 100vw;
-  height: fit-content !important;
+  height: calc(((100vw/3)/16) * 9);
+  position: relative;
+  left: 0;
+  margin-right: 10px;
 
+  transition: left 1s;
   > div {
     width: 33.3333vw;
     max-width: 450px;
     position: unset !important;
   }
 
-  .image {
+  .img {
+    border-radius: 1rem;
     object-fit: contain;
     width: 100% !important;
     position: relative !important;
     height: unset !important;
+  }
+  img {
+    border-radius: 1rem;
   }
 }
 
@@ -33,7 +43,7 @@
   div {
     width: fit-content;
     display: block;
-    font-size: 0.8rem;
+    font-size: 1rem;
     margin: 0.2rem;
 
     label {
@@ -66,11 +76,29 @@
       border: 0.15em solid var(--theme-color);
     }
     input {
-      transition: 15ms ease-out;
       position: absolute;
-      top: 0;
-      left: 0;
       opacity: 0;
     }
+  }
+}
+
+@media screen and (max-width: 55rem) {
+  .ImageSlider {
+    width: calc(100vw - 6rem);
+    max-width: none;
+  }
+  .pictureWrapper {
+    width: 100%;
+    max-width: none;
+    height: calc((100vw - 6rem) / 16 * 9);
+
+    > div {
+      max-width: none;
+      width: calc(100vw - 6rem);
+    }
+  }
+  .controls {
+    padding-left: 0;
+    justify-content: center;
   }
 }
