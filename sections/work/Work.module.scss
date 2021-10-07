@@ -5,9 +5,56 @@
     font-size: 1.75rem;
   }
 }
+.flexWrapper {
+  display: flex;
+
+  .text {
+    width: 35%;
+    color: rgb(21, 20, 24);
+    padding: 1rem;
+
+    h2 {
+      font-size: 1.8rem;
+      font-weight: 500;
+    }
+    p {
+      font-weight: 400;
+      font-size: 1.05rem;
+      margin-bottom: 2rem;
+    }
+    .links {
+      display: flex;
+    }
+
+    button {
+      border: none;
+      padding: 1rem;
+      font-size: 1rem;
+      background-color: var(--theme-color);
+      border-radius: 0.8rem;
+      vertical-align: center;
+      line-height: 1.4rem;
+      display: flex;
+      cursor: pointer;
+      .buttonIcon {
+        display: block;
+        height: 1.4rem;
+        width: 1.4rem;
+        stroke-width: 2.5px;
+      }
+
+
+
+      &:hover {
+        color: inherit;
+        filter: unset;
+      }
+    }
+  }
+}
 
 @media screen and (max-width: 55rem){
   .work {
-    color: #000;
+    color: rgb(21, 20, 24);
   }
 }

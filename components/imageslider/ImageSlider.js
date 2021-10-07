@@ -10,7 +10,7 @@ function ImageSlider({ images }) {
     });
   };
   return (
-    <>
+    <div>
       <div className={styles.ImageSlider}>
         {images.map((image, index) => {
           return (
@@ -43,7 +43,7 @@ function ImageSlider({ images }) {
           </div>
         ))}
       </form>
-    </>
+    </div>
   );
 }
 
