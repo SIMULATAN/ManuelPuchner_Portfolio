@@ -9,7 +9,7 @@
   display: flex;
 
   .text {
-    width: 35%;
+    width: calc(35% + 1rem);
     color: rgb(21, 20, 24);
     padding: 1rem;
 
@@ -36,14 +36,13 @@
       line-height: 1.4rem;
       display: flex;
       cursor: pointer;
+      margin-right: 0.5rem;
       .buttonIcon {
         display: block;
         height: 1.4rem;
         width: 1.4rem;
         stroke-width: 2.5px;
       }
-
-
 
       &:hover {
         color: inherit;
@@ -53,8 +52,25 @@
   }
 }
 
-@media screen and (max-width: 55rem){
+@media screen and (max-width: 73rem) {
+  .work {
+    .text {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 55rem) {
   .work {
     color: rgb(21, 20, 24);
+    text-align: center;
+    .flexWrapper {
+      flex-direction: column;
+    }
+    .links {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
 }

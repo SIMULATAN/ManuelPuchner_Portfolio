@@ -19,7 +19,6 @@ function Work() {
   return (
     <div id="work" className={styles.work}>
       <h2 className={styles.workHeader}>Some of my Work</h2>
-      <p>Note: These are just placeholder images</p>
       <div className={styles.flexWrapper}>
         <ImageSlider images={images} />
         <div className={styles.text}>

@@ -1,7 +1,7 @@
 .ImageSlider {
   display: inline-flex;
   width: 33.3333vw;
-  max-width: 450px;
+  max-width: 530px;
   overflow: hidden;
   position: relative;
   border-radius: 1rem;
@@ -9,7 +9,7 @@
 
 .pictureWrapper {
   width: 100vw;
-  height: calc(((100vw/3)/16) * 9);
+  height: calc(((100vw / 3) / 16) * 9);
   position: relative;
   left: 0;
   margin-right: 10px;
@@ -17,7 +17,7 @@
   transition: left 1s;
   > div {
     width: 33.3333vw;
-    max-width: 450px;
+    max-width: 530px;
     position: unset !important;
   }
 
@@ -78,6 +78,21 @@
     input {
       position: absolute;
       opacity: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 73rem) {
+  .ImageSlider {
+    width: calc(50vw - 6rem);
+    max-width: none;
+  }
+  .pictureWrapper {
+    width: 100%;
+    max-width: none;
+    height: calc((50vw - 6rem) / 16 * 9);
+    > div {
+      width: calc((50vw - 6rem));
     }
   }
 }
